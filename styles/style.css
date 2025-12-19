@@ -6,13 +6,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: hsl(221, 100%, 96%);
 }
 
 .main {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+  padding: 0 10%;
 }
 
 .header {
@@ -25,11 +28,87 @@ body {
 }
 
 .head2 {
-  font-weight: 500;
+  font-weight: 700;
   color: hsl(234, 12%, 34%);
 }
 
-.description {
+.description-head {
   color: hsl(212, 6%, 44%);
   font-size: 15px;
+}
+
+.title {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.card-container {
+  width: 33%;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  box-shadow: 2px 2px 5px hsl(234, 19%, 66%);
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  min-height: 230px;
+  border-radius: 6px;
+}
+
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card-img {
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.card-description {
+  font-size: 12px;
+  color: hsl(212, 6%, 44%);
+}
+
+.cards-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.mid-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .main {
+    gap: 15px;
+  }
+  .cards-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card-container {
+    width: 85%;
+  }
 }
