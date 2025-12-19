@@ -4,7 +4,32 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .main {
+  height: 100vh;
   display: flex;
-  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.head1 {
+  font-weight: 400;
+  color: hsl(212, 6%, 44%);
+}
+
+.head2 {
+  font-weight: 500;
+  color: hsl(234, 12%, 34%);
+}
+
+.description {
+  color: hsl(212, 6%, 44%);
+  font-size: 15px;
 }
